@@ -1,4 +1,10 @@
 /**
+* dat-utils (https://github.com/krismuniz/dat-utils/)
+* Copyright (c) 2018 Kristian Muñiz
+* Licensed under MIT (https://github.com/krismuniz/dat-utils/blob/master/LICENSE.md)
+*/
+
+/**
 * @function getDirPaths
 * @description Gets all paths necessary to complete the directory tree for a given path
 * @param {string} path - the path to the directory to be created
