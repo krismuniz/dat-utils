@@ -4,7 +4,7 @@ Reference material for the `dat-utils` module for dat-protocol browsers (like Be
 
 ## deepMkdir(archive, path)
 
-Adds a directory, including the containing directory-tree (if necessary)
+Adds a directory, and creates parent directories as needed
 
 ### Parameters
 
@@ -17,7 +17,7 @@ Adds a directory, including the containing directory-tree (if necessary)
 
 ## deepWriteFile(archive, path)
 
-Writes a file and creates necessary directory-tree
+Writes a file, creates parent directories as needed
 
 ### Parameters
 

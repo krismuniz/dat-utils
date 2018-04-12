@@ -18,7 +18,7 @@ const getDirPaths = (path) => {
 
 /**
 * @function deepMkdir
-* @description Adds a directory, including the containing directory-tree (if necessary)
+* @description Adds a directory, and creates parent directories as needed
 * @param {DatArchive} archive - the archive to verify
 * @param {string} path - the path to the directory to be created
 * @returns {Promise<void>} - an empty Promise :'(
@@ -45,7 +45,7 @@ const deepMkdir = async (archive, path) => {
 
 /**
 * @function deepWriteFile
-* @description Writes a file and creates necessary directory-tree
+* @description Writes a file, creates parent directories as needed
 * @param {DatArchive} archive - the archive to verify
 * @param {string} path - the path to the directory to be created
 * @returns {Promise<void>} - an empty Promise :'(

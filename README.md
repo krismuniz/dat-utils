@@ -17,7 +17,7 @@ const archiveB = await DatArchive.select() // or new DatArchive(<dat_url>)
 copyFile(archiveA, archiveB, '/deep/path/to/index.html')
 ```
 
-The code above deep-copies `/deep/path/to/index.html` from `archiveA` to `archiveB`. No need to create `/deep`, `/deep/path`, or `/deep/path/to/` directories.
+The code above deep-copies `/deep/path/to/index.html` from `archiveA` to `archiveB`. No need to create `/deep`, `/deep/path`, or `/deep/path/to/` directories, it creates parent directories as needed.
 
 ## Requirements
 
@@ -112,7 +112,7 @@ await fileExists(archive, '/data.txt')
 deepWriteFile(archive, path, data[, options])
 ```
 
-Deep-writes a file to an archive, regardless of directory-tree shape.
+Deep-writes a file to an archive, creates parent directories as needed.
 
 ##### Example
 
@@ -132,7 +132,7 @@ await deepWriteFile(archive, '/path/to/data.txt', 'hello world!')
 deepMkdir(archive, path)
 ```
 
-Recursively creates a directory on the path specified, regardless of directory-tree
+Recursively creates a directory on the path specified, creates parent directories as needed.
 
 ##### Example
 
