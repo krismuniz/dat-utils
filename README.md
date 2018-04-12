@@ -1,5 +1,7 @@
 # Dat Utils
 
+[![Dat](https://dat-badge.glitch.me/utils-krismuniz.hashbase.io/badge.svg)](dat://utils-krismuniz.hashbase.io) [![License:MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](/LICENSE.md)
+
 A small set of utilities to ease the process of building decentralized apps on top of the [DatArchive API](https://beakerbrowser.com/docs/apis/dat.html) in the form of an ES6 module.
 
 With this module you can copy files from one archive to another (`copyFile`), deep-write files (`deepWriteFile`), check if a file exists (`fileExists`), and create dirs without worrying about about the directory-tree (`deepMkdir`).
